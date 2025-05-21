@@ -46,6 +46,13 @@ export default function Home() {
           <Carousel items={sliders} />
         </div>
       </div>
+      <div className="home-footer">
+        <h2>¿Tienes preguntas?</h2>
+        <p>Contáctanos para más información.</p>
+        <a href="/contacto" className="btn-contact">
+          Contáctanos
+        </a>
+      </div>
     </div>
   );
 }
