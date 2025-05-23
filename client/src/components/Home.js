@@ -3,6 +3,7 @@ import "../styles/Home.css";
 import Carousel from "./Carousel.js";
 import AceiteImg from "../images/AceiteCannabis.jpg";
 import Slyde2Img from "../images/Slide2.webp";
+import CardSlide from "./CardSlide.js";
 
 const sliders = [
   {
@@ -13,6 +14,35 @@ const sliders = [
     image: Slyde2Img,
     title: "Semillas OG Kush",
   },
+  {
+    image: Slyde2Img,
+    title: "Semillas OG Kush",
+  },
+  {
+    image: Slyde2Img,
+    title: "Semillas OG Kush",
+  },
+  {
+    image: Slyde2Img,
+    title: "Semillas OG Kush",
+  },
+  {
+    image: Slyde2Img,
+    title: "Semillas OG Kush",
+  },
+  {
+    image: Slyde2Img,
+    title: "Semillas OG Kush",
+  },
+  {
+    image: Slyde2Img,
+    title: "Semillas OG Kush",
+  },
+  {
+    image: Slyde2Img,
+    title: "Semillas OG Kush",
+  },
+
   // …más slides
 ];
 export default function Home() {
@@ -31,6 +61,9 @@ export default function Home() {
           Articulos educativos
         </a>
       </header>
+      <div>
+        <CardSlide items={sliders} />
+      </div>
       <h2 className="h2_featured_products">Artículos destacados</h2>
       <div className="featured_products">
         <div className="benefit2">
