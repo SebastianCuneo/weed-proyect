@@ -4,6 +4,7 @@ import Carousel from "./Carousel.js";
 import AceiteImg from "../images/AceiteCannabis.jpg";
 import Slyde2Img from "../images/Slide2.webp";
 import CardSlide from "./CardSlide.js";
+import { Link } from "react-router-dom";
 
 const sliders = [
   {
@@ -51,15 +52,15 @@ export default function Home() {
       <header className="home-header">
         <h1>Bienvenido a GreenMarket</h1>
 
-        <a href="/guias" className="btn-explore">
-          Guías de cultivo
-        </a>
-        <a href="/guias" className="btn-explore">
+        <Link to="/guides" className="btn-explore">
+          Guías
+        </Link>
+        <Link to="/productos" className="btn-explore">
           Productos
-        </a>
-        <a href="/guias" className="btn-explore">
+        </Link>
+        <Link to="/productos" className="btn-explore">
           Articulos educativos
-        </a>
+        </Link>
       </header>
       <div>
         <CardSlide items={sliders} />

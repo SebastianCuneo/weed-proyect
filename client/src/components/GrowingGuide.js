@@ -1,6 +1,32 @@
 import React from "react";
 import "../styles/GrowingGuide.css";
+import AceiteImg from "../images/AceiteCannabis.jpg";
+import Slyde2Img from "../images/Slide2.webp";
+import { Link } from "react-router-dom";
+
 export default function GrowingGuide() {
+  const cards = [
+    {
+      imgSrc: AceiteImg,
+      title: "Germinacion de Semillas",
+      Link: "/germination",
+    },
+    {
+      imgSrc: Slyde2Img,
+      title: "Prepara el suelo",
+      link: "/preparar-suelo",
+    },
+    {
+      imgSrc: AceiteImg,
+      title: "Planta las semillas",
+      link: "/plantar-semillas",
+    },
+    {
+      imgSrc: Slyde2Img,
+      title: "Riega adecuadamente",
+      link: "/riego",
+    },
+  ];
   return (
     <div className="growing-guide-container">
       <h1>Guía de Cultivo</h1>
@@ -17,6 +43,16 @@ export default function GrowingGuide() {
         <li>Controla la luz y temperatura.</li>
         <li>Cosecha cuando estén listas.</li>
       </ol>
+      <div className="cards-container">
+        {cards.map((card, idx) => (
+          <Link to={card.link} key={idx} className="card text-bg-dark">
+            <img src={card.imgSrc} className="card-img" alt={card.title} />
+            <div className="card-img-overlay">
+              <h5 className="card-title">{card.title}</h5>
+            </div>
+          </Link>
+        ))}
+      </div>
     </div>
   );
 }

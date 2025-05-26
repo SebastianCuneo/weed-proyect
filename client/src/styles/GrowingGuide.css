@@ -10,6 +10,7 @@
   background-position: center; /* centra la imagen */
   background-repeat: no-repeat; /* evita repetirla */
   min-height: 100vh;
+  color: white;
 }
 
 .home-header {
@@ -117,4 +118,43 @@
   margin-top: 50px;
   width: 100%;
   height: 200px;
+}
+.cards-container {
+  display: flex;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 50px;
+  margin: 0px;
+}
+
+.card {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.card-img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7));
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.card-title {
+  margin: 0 0 20px;
+  font-size: 1.25rem;
+  text-align: center;
 }

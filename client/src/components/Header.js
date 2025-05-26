@@ -5,7 +5,9 @@ import { Link } from "react-router-dom";
 export default function Header() {
   return (
     <header className="header">
-      <div className="logo">GreenMarket</div>
+      <Link to="/" className="logo">
+        GreenMarket
+      </Link>
       <nav>
         <ul className="nav-list">
           <li>
