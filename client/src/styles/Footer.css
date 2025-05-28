@@ -1,0 +1,25 @@
+.footer {
+  background: #1f523a;
+  color: white;
+  padding: 20px 0px;
+  text-align: center;
+  border-radius: 8px;
+  margin-top: 50px;
+  width: 100%;
+}
+
+.btn-contact {
+  display: inline-block;
+  background: white;
+  color: #1f523a;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.btn-contact:hover {
+  background: #82c341;
+  color: white;
+}

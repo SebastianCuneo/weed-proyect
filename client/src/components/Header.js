@@ -11,9 +11,6 @@ export default function Header() {
       <nav>
         <ul className="nav-list">
           <li>
-            <Link to="/">Inicio</Link>
-          </li>
-          <li>
             <Link to="/guides">Guías</Link>
           </li>
           <li>

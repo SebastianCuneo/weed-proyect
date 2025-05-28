@@ -5,10 +5,9 @@
   padding: 0px;
   margin: 0 auto;
   background-image: url("../images/marijuana-fondo.jpg");
-  /* ruta dentro de public/ */
-  background-size: cover; /* ajusta para cubrir todo */
-  background-position: center; /* centra la imagen */
-  background-repeat: no-repeat; /* evita repetirla */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   min-height: 100vh;
 }
 
