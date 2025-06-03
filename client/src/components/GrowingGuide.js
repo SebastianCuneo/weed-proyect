@@ -18,18 +18,19 @@ import ExteriorInteririor from "../images/ExteriorInterior.png";
 import EspacioyRendimiento from "../images/EspacioyRendimiento.png";
 import Equipamiento from "../images/Equipamiento.png";
 import LegalyEtico from "../images/LegalyEtico.png";
+import GerminacionSemillas from "./GuiaDeCultivo/GerminacionSemillas";
 
 export default function GrowingGuide() {
   const cards = [
     {
       imgSrc: Germinacion,
       title: "Germinacion de Semillas",
-      Link: "/germination",
+      Link: "/GerminacionSemillas",
     },
     {
       imgSrc: Sustratos,
       title: "Preparacion del suelo",
-      link: "/preparar-suelo",
+      link: "/GerminacionSemillas",
     },
     {
       imgSrc: Vegetativo,
