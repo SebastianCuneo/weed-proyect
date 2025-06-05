@@ -25,12 +25,12 @@ export default function GrowingGuide() {
     {
       imgSrc: Germinacion,
       title: "Germinacion de Semillas",
-      Link: "/GerminacionSemillas",
+      link: "/GerminacionSemillas",
     },
     {
       imgSrc: Sustratos,
       title: "Preparacion del suelo",
-      link: "/GerminacionSemillas",
+      link: "/PreparacionDelSuelo",
     },
     {
       imgSrc: Vegetativo,
