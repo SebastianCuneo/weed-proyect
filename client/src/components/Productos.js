@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import SearchFilter from "./SearchFilter";
 import "../styles/Productos.css";
+import Footer from "./Footer";
 
 // Ejemplo de datos; en producción vendrían de una API
 const initialItems = [
@@ -8,7 +9,7 @@ const initialItems = [
     id: 1,
     nombre: "Aceite de CBD 10%",
     precio: "$2.490",
-    imagen: "/images/aceite-cbd.jpg",
+    imagen: "/images/AceiteCannabis.jpg",
     link: "/productos/1",
   },
   {
@@ -39,6 +40,34 @@ const initialItems = [
     imagen: "/images/maceta.jpg",
     link: "/productos/5",
   },
+  {
+    id: 5,
+    nombre: "Maceta Autorriego",
+    precio: "$1.250",
+    imagen: "/images/maceta.jpg",
+    link: "/productos/5",
+  },
+  {
+    id: 5,
+    nombre: "Maceta Autorriego",
+    precio: "$1.250",
+    imagen: "/images/maceta.jpg",
+    link: "/productos/5",
+  },
+  {
+    id: 5,
+    nombre: "Maceta Autorriego",
+    precio: "$1.250",
+    imagen: "/images/maceta.jpg",
+    link: "/productos/5",
+  },
+  {
+    id: 5,
+    nombre: "Maceta Autorriego",
+    precio: "$1.250",
+    imagen: "/images/maceta.jpg",
+    link: "/productos/5",
+  },
 ];
 
 export default function Productos() {
@@ -53,22 +82,30 @@ export default function Productos() {
   }, [query]);
 
   return (
-    <section className="productos-section">
-      <h2>Marketplace</h2>
-      <SearchFilter query={query} onChange={setQuery} />
-      <div className="productos-grid">
-        {items.map((item) => (
-          <a key={item.id} href={item.link} className="producto-card">
-            <img src={item.imagen} alt={item.nombre} className="producto-img" />
-            <div className="producto-info">
-              <h3>{item.nombre}</h3>
-              <p className="producto-price">{item.precio}</p>
-              <button className="producto-btn">Comprar</button>
-            </div>
-          </a>
-        ))}
-        {items.length === 0 && <p>No se encontraron productos.</p>}
-      </div>
-    </section>
+    <>
+      <section className="productos-section">
+        <h2>Marketplace</h2>
+        <SearchFilter query={query} onChange={setQuery} />
+        <div className="productos-grid">
+          {items.map((item) => (
+            <a key={item.id} href={item.link} className="producto-card">
+              <img
+                src={item.imagen}
+                alt={item.nombre}
+                className="producto-img"
+              />
+              <div className="producto-info">
+                <h3>{item.nombre}</h3>
+                <p className="producto-price">{item.precio}</p>
+                <button className="producto-btn">Comprar</button>
+              </div>
+            </a>
+          ))}
+          {items.length === 0 && <p>No se encontraron productos.</p>}
+        </div>
+      </section>
+
+      <Footer />
+    </>
   );
 }

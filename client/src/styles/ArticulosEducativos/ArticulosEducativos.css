@@ -1,0 +1,79 @@
+.articulos-educativos {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: #f4f7f5;
+}
+
+.articulos-title {
+  font-size: 2rem;
+  color: #1f523a;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.articulos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.card-articulo {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-articulo:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.card-imagen {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.card-contenido {
+  flex: 1;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-titulo {
+  font-size: 1.25rem;
+  color: #1f523a;
+  margin: 0 0 12px;
+  flex-shrink: 0;
+}
+
+.card-excerpt {
+  font-size: 0.95rem;
+  color: #555555;
+  line-height: 1.5;
+  margin: 0 0 16px;
+  flex-grow: 1;
+}
+
+.card-boton {
+  align-self: flex-start;
+  display: inline-block;
+  background: #1f523a;
+  color: #ffffff;
+  padding: 10px 18px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.2s ease;
+}
+
+.card-boton:hover {
+  background: #163f2f;
+}

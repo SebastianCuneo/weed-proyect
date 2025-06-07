@@ -65,7 +65,7 @@ export default function Home() {
         <Link to="/productos" className="btn-explore">
           Productos
         </Link>
-        <Link to="/productos" className="btn-explore">
+        <Link to="/articulos-educativos" className="btn-explore">
           Articulos educativos
         </Link>
       </header>
