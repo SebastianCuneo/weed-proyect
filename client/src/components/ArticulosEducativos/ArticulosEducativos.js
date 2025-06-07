@@ -60,26 +60,29 @@ const articles = [
 
 export default function ArticulosEducativos() {
   return (
-    <section className="articulos-educativos">
-      <h2 className="articulos-title">Artículos Educativos</h2>
-      <div className="articulos-grid">
-        {articles.map((article) => (
-          <article key={article.id} className="card-articulo">
-            <img
-              className="card-imagen"
-              src={article.image}
-              alt={article.title}
-            />
-            <div className="card-contenido">
-              <h3 className="card-titulo">{article.title}</h3>
-              <p className="card-excerpt">{article.excerpt}</p>
-              <a href={article.link} className="card-boton">
-                Leer más
-              </a>
-            </div>
-          </article>
-        ))}
-      </div>
-    </section>
+    <>
+      <section className="articulos-educativos">
+        <h2 className="articulos-title">Artículos Educativos</h2>
+        <div className="articulos-grid">
+          {articles.map((article) => (
+            <article key={article.id} className="card-articulo">
+              <img
+                className="card-imagen"
+                src={article.image}
+                alt={article.title}
+              />
+              <div className="card-contenido">
+                <h3 className="card-titulo">{article.title}</h3>
+                <p className="card-excerpt">{article.excerpt}</p>
+                <a href={article.link} className="card-boton">
+                  Leer más
+                </a>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+      <Footer />
+    </>
   );
 }
