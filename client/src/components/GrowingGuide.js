@@ -30,7 +30,7 @@ export default function GrowingGuide() {
     {
       imgSrc: Sustratos,
       title: "Preparacion del suelo",
-      link: "/PreparacionDelSuelo",
+      link: "/preparacion-suelo",
     },
     {
       imgSrc: Vegetativo,

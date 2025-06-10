@@ -8,6 +8,7 @@ import Productos from "./components/Productos";
 import Contacto from "./components/Contacto";
 import GerminacionSemillas from "./components/GuiaDeCultivo/GerminacionSemillas.js";
 import ArticulosEducativos from "./components/ArticulosEducativos/ArticulosEducativos.js";
+import PreparacionSuelo from "./components/GuiaDeCultivo/PreparacionSuelo.js";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/germinacionSemillas" element={<GerminacionSemillas />} />
         <Route path="/articulos-educativos" element={<ArticulosEducativos />} />
         <Route path="/contacto" element={<Contacto />} />
+        <Route path="/preparacion-suelo" element={<PreparacionSuelo />} />
       </Routes>
       <div className="App"></div>
     </>
