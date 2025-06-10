@@ -12,11 +12,13 @@ const slider_AceiteExtracciones = [
   {
     image: AceiteImg,
     title: "Aceite de CBD 10%",
+    link: "/productos/1",
   },
-
+ 
   {
     image: Rosin,
     title: "Extracción de Rosin",
+    link: "/productos/2",
   },
 
   // …más slides

@@ -1,6 +1,7 @@
 // src/components/Carousel.js
 import React, { useState, useEffect, useRef } from "react";
 import "../styles/Carousel.css";
+import { Link } from "react-router-dom";
 
 export default function Carousel({ items }) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -36,6 +37,7 @@ export default function Carousel({ items }) {
       >
         {items.map((slide, idx) => (
           <div className="carousel__slide" key={idx}>
+            <Link to={slide.link || "#"} >
             <img
               src={slide.image}
               alt={slide.title}
@@ -44,6 +46,7 @@ export default function Carousel({ items }) {
             {slide.title && (
               <div className="carousel__caption">{slide.title}</div>
             )}
+            </Link>
           </div>
         ))}
       </div>
