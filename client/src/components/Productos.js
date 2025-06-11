@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import SearchFilter from "./SearchFilter";
 import "../styles/Productos.css";
 import Footer from "./Footer";
+import ProductCard from './ProductCard';
 import AceiteImg from "../images/AceiteCannabis.jpg";
 import Slyde2Img from "../images/Slide2.webp";
 import { Link } from "react-router-dom";
@@ -63,29 +64,17 @@ export default function Productos() {
   }, [query]);
 
   return (
-    <>
+     <>
       <section className="productos-section">
         <h2>Marketplace</h2>
         <SearchFilter query={query} onChange={setQuery} />
         <div className="productos-grid">
           {items.map((item) => (
-            <a key={item.id} href={item.link} className="producto-card">
-              <img
-                src={item.imagen}
-                alt={item.nombre}
-                className="producto-img"
-              />
-              <div className="producto-info">
-                <h3>{item.nombre}</h3>
-                <p className="producto-price">{item.precio}</p>
-                <button className="producto-btn">Comprar</button>
-              </div>
-            </a>
+            <ProductCard key={item.id} item={item} />
           ))}
           {items.length === 0 && <p>No se encontraron productos.</p>}
         </div>
       </section>
-
       <Footer />
     </>
   );
