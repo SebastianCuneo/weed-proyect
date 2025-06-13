@@ -13,7 +13,7 @@ import KitIndoor from "../images/Productos/KitIndoor.png";
 import Maceta20L from "../images/Productos/Maceta20L.png";
 
 // Ejemplo de datos; en producción vendrían de una API
-const initialItems = [
+export const initialItems = [
   {
     id: 1,
     nombre: "Aceite de CBD 10%",
