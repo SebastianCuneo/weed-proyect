@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import Footer from "./Footer.js";
 import Rosin from "../images/Rosin.png";
 import Tijeras from "../images/Tijeras.png";
+import Vaporizador from "../images/Productos/Vaporizador.png";
 
 const slider_AceiteExtracciones = [
   {
@@ -14,7 +15,7 @@ const slider_AceiteExtracciones = [
     title: "Aceite de CBD 10%",
     link: "/productos/1",
   },
- 
+
   {
     image: Rosin,
     title: "Extracción de Rosin",
@@ -27,30 +28,36 @@ const slider_SemillasyAccesorios = [
   {
     image: Tijeras,
     title: "tijeras de podar",
+    link: "/productos/6",
   },
   {
     image: Slyde2Img,
     title: "Semillas OG Kush",
+    link: "/productos/2",
   },
   {
     image: Rosin,
     title: "Extracción de Rosin",
+    link: "/productos/3",
   },
 
   // …más slides
 ];
 const slider_VaporizadoresyParafernalia = [
   {
-    image: AceiteImg,
-    title: "Aceite de CBD 10%",
+    image: Vaporizador,
+    title: "Vaporizador X-Cloud",
+    link: "/productos/3",
   },
   {
     image: Slyde2Img,
     title: "Semillas OG Kush",
+    link: "/productos/1",
   },
   {
     image: Rosin,
     title: "Extracción de Rosin",
+    link: "/productos/1",
   },
 
   // …más slides

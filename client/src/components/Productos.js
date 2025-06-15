@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import SearchFilter from "./SearchFilter";
 import "../styles/Productos.css";
 import Footer from "./Footer";
-import ProductCard from './ProductCard';
+import ProductCard from "./ProductCard";
 import AceiteImg from "../images/AceiteCannabis.jpg";
 import Slyde2Img from "../images/Slide2.webp";
 import { Link } from "react-router-dom";
@@ -17,6 +17,7 @@ export const initialItems = [
   {
     id: 1,
     nombre: "Aceite de CBD 10%",
+    descripcion: "Aceite de CBD de alta calidad, ideal para uso diario.",
     precio: "$2.490",
     imagen: AceiteImg,
     link: "/productos/1",
@@ -24,6 +25,8 @@ export const initialItems = [
   {
     id: 2,
     nombre: "Semillas OG Kush",
+    descripcion:
+      "Semillas de cannabis OG Kush, reconocidas por su potencia y sabor.",
     precio: "$990",
     imagen: Slyde2Img,
     link: "/productos/2",
@@ -31,6 +34,8 @@ export const initialItems = [
   {
     id: 3,
     nombre: "Vaporizador X-Cloud",
+    descripcion:
+      "Vaporizador portátil X-Cloud, ideal para disfrutar de tus hierbas favoritas.",
     precio: "$7.990",
     imagen: Vaporizador,
     link: "/productos/3",
@@ -38,6 +43,7 @@ export const initialItems = [
   {
     id: 4,
     nombre: "Kit Cultivo Indoor",
+    descripcion: "Kit completo para cultivo indoor, incluye luces y macetas",
     precio: "$15.500",
     imagen: KitIndoor,
     link: "/productos/4",
@@ -45,11 +51,21 @@ export const initialItems = [
   {
     id: 5,
     nombre: "Maceta Autorriego",
+    descripcion:
+      "Maceta de 20L con sistema de autorriego, ideal para plantas grandes.",
     precio: "$1.250",
     imagen: Maceta20L,
     link: "/productos/5",
   },
-  
+  {
+    id: 6,
+    nombre: "Tijeras de Podar",
+    descripcion:
+      "Tijeras de podar de alta precisión, perfectas para el cuidado de tus plantas.",
+    precio: "$399",
+    imagen: Tijeras,
+    link: "/productos/6",
+  },
 ];
 
 export default function Productos() {
@@ -64,7 +80,7 @@ export default function Productos() {
   }, [query]);
 
   return (
-     <>
+    <>
       <section className="productos-section">
         <h2>Marketplace</h2>
         <SearchFilter query={query} onChange={setQuery} />
