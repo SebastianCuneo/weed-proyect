@@ -8,6 +8,7 @@ import Footer from "./Footer.js";
 import Rosin from "../images/Rosin.png";
 import Tijeras from "../images/Tijeras.png";
 import Vaporizador from "../images/Productos/Vaporizador.png";
+import Logo from "../images/Logo.png";
 
 const slider_AceiteExtracciones = [
   {
