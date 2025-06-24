@@ -1,12 +1,13 @@
 import React from "react";
 import "../styles/Header.css";
 import { Link } from "react-router-dom";
+import Logo from "../images/Logo.png";
 
 export default function Header() {
   return (
     <header className="header">
       <Link to="/" className="logo">
-        GreenMarket 
+        <img src={Logo} alt="Logo" />
       </Link>
       <nav>
         <ul className="nav-list">
