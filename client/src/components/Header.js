@@ -6,7 +6,7 @@ export default function Header() {
   return (
     <header className="header">
       <Link to="/" className="logo">
-        GreenMarket
+        GreenMarket 
       </Link>
       <nav>
         <ul className="nav-list">
