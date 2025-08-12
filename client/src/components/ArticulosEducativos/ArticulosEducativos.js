@@ -1,4 +1,4 @@
-// src/components/ArticulosEducativos.js
+ // src/components/ArticulosEducativos.js
 import React from "react";
 import "../../styles/ArticulosEducativos/ArticulosEducativos.css";
 import Rosin from "../../images/Rosin.png";
